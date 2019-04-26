@@ -6,7 +6,6 @@ using System.ComponentModel;
 using DevExpress.ExpressApp.DC;
 using System.Collections.Generic;
 using DevExpress.Persistent.Base;
-using DevExpress.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.Editors;
@@ -21,7 +20,6 @@ namespace T735638.Module {
     public sealed partial class T735638Module : ModuleBase {
         public T735638Module() {
             InitializeComponent();
-			BaseObject.OidInitializationMode = OidInitializationMode.AfterConstruction;
         }
         public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB) {
             ModuleUpdater updater = new DatabaseUpdate.Updater(objectSpace, versionFromDB);

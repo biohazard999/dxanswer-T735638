@@ -1,0 +1,6 @@
+<Project>
+    <PropertyGroup>
+        <TargetFramework>net462</TargetFramework>
+        <RestoreSources>$(NUGET_FEED);$(RestoreSources)</RestoreSources>
+    </PropertyGroup>
+  </Project>

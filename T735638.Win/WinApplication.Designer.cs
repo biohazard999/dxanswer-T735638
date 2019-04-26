@@ -27,7 +27,6 @@
             this.module2 = new DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule();
             this.module3 = new T735638.Module.T735638Module();
             this.module4 = new T735638.Module.Win.T735638WindowsFormsModule();
-            this.objectsModule = new DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // T735638WindowsFormsApplication
@@ -38,7 +37,6 @@
             this.Modules.Add(this.module2);
             this.Modules.Add(this.module3);
             this.Modules.Add(this.module4);
-            this.Modules.Add(this.objectsModule);
             this.UseOldTemplates = false;
             this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.T735638WindowsFormsApplication_DatabaseVersionMismatch);
             this.CustomizeLanguagesList += new System.EventHandler<DevExpress.ExpressApp.CustomizeLanguagesListEventArgs>(this.T735638WindowsFormsApplication_CustomizeLanguagesList);
@@ -53,6 +51,5 @@
         private DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule module2;
         private T735638.Module.T735638Module module3;
         private T735638.Module.Win.T735638WindowsFormsModule module4;
-        private DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule objectsModule;
     }
 }
